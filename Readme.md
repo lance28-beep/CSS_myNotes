@@ -295,3 +295,4 @@ a pseudo-class is used to define a special state of an element.
 - style an element when a user mouss over it
 - style visisted and unvisited links differently
 - style an element when it gets focus
+## syntax
