@@ -159,7 +159,7 @@ h1, h2, p {
 <link rel="stylesheet" href="mystyle.css">
 ```
 
-<b>External CSS</b>
+<b>Internal CSS</b>
 
 ```
 <head>
@@ -176,9 +176,44 @@ h1 {
 </head>
 ```
 
-<b>External CSS</b>
+<b>Inline CSS</b>
 
 ```
 <h1 style="color:blue;text-align:center;">This is a heading</h1>
 <p style="color:red;">This is a paragraph.</p>
 ```
+
+Note:<br>
+What style will be used when there is more than one style specified for an HTML element?<br>
+All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
+
+- Inline style (inside an HTML element)
+- External and Internal style sheets ( in the head section)
+- Browser default
+  so, an inline style has the highest priority, and will override external and internal styles and browser defaults
+
+## Specificity & When to use Selectors
+<hr>
+
+## What is Specificity?
+It there are two or more conflicting CSS rules that point to the same element, the browser follows some rules to determine which one is most specific and therefore wins out.<br>
+Think of specificity as a score/rank that determines which style declarations are ultimately applied to an element.<br>
+The universal selector<code>(*)</code> has low specificity, while ID selectors are highly specific!<br>
+<code>Specificity is a common reason why you CSS- rules dont apply to some elements, although you think they should</code>
+
+## Specificity hierarchy
+Every selector has its place in the specificity hierarchy. There are four categories which define the specificity level of a selector:<br>
+- <b>Inline styles </b> -  An inline style is attached directly to the element to be styled
+```
+<h1 style="color: #ffffff;">
+```
+- <b>IDs </b> -  an ID is a unique identifier to the page elements, such as #navbar
+
+- <b>Classes, attributes and pseudo-classes </b> - This category includes .classes, [attributes] and pseudo-classes such as :hover ,:focus etc.
+
+- <b>Elements and pseudo-elements </b> -  this category includes element names and pseudo-elements, such as h1, div, :before and :after
+
+## How to Calculate Specificity?
+<code>Memorize how to calculate specificity!</code>
+Start at 0, and 1000 for style attribute, add 100 for each ID, add 10 for each attribute, class or pseudo-class, and 1 for each element name or pseudo-element.
+
