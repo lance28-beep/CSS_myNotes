@@ -359,3 +359,9 @@ ul li:first-child {
 
 ## The :lang Pseudo-class
 The <code>:lang<code> pseudo-class allows you to define special rules for different languages.
+
+
+Notes:
+##  Div and Span - used for grouping
+- div - used to group multiple elements
+- span - used to group inline content

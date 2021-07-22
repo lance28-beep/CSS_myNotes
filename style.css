@@ -1,70 +1,16 @@
-/* CSS file */
-* {
-  background-color: rebeccapurple;
-}
-/* body {
-  background-color: royalblue;
-} */
-
-#thisID {
-  color: greenyellow;
-}
-h3 {
+.red {
   color: red;
 }
-.isClass {
-  color: teal;
-}
-#isID {
-  color: goldenrod;
-}
-div:hover {
-  background-color: red;
-}
-div h1:hover {
-  background-color: green;
-  color: red;
+.blue {
+  color: blue;
+  background: grey;
 }
 
-div p:hover {
-  background-color: green;
-  color: red;
+#title {
+  font-size: 35px;
+  background: green;
 }
 
-/* unvisited link */
-#myID:link {
-  background-color: #ff0000;
-}
-
-/* visited link */
-#myID:visited {
-  background-color: #00ff00;
-}
-
-/* mouse over link */
-#myID:hover {
-  background-color: #ff00ff;
-}
-
-/* selected link */
-#myID:active {
-  background-color: #0000ff;
-}
-
-/* ----------------------------- */
-.tooltip p {
-  display: none;
-  background-color: red;
-  padding: 20px;
-}
-.tooltip:hover p {
-  display: block;
-}
-/* ----------------------------- */
-ul li:first-child {
-  color: red;
-}
-
-q:lang(no) {
-  quotes: '~''~';
+.uppercase {
+  text-transform: uppercase;
 }

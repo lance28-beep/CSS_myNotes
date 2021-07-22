@@ -1,0 +1,147 @@
+1)What is HTML - 2:47
+2)Google Chrome and Visual Studio Code - 5:11
+3)Download Google Chrome - 6:02
+4)Download Visual Studio Code - 8:11
+5)Create A Project - 13:58
+6)First Webpage - 16:09
+7)Visual Code Settings - 20:35
+8)Download Live Server Extension - 22:48
+9)Basic HTML Document Structure - 26:59
+10)Implementing Basic Document Structure - 29:05
+11)Word Wrap and Emmet - 34:50
+12)Heading Elements - 40:24
+13) Paragraph Elements - 44:33
+14)White Space Collapsing - 47:50
+15)Lorem Ipsum Dummy Text - 49:22
+16)Images - 51:17
+17)Multiple Path Options - 57:15
+18)External Images - 1:00:06
+19)Nice Images - 1:02:43
+20)Width and Height Attribute - 1:05:49
+21)Crop Images - 1:08:40
+22)Proper Path-1:12:07
+23) Comments And Line Breaks - 01:15:37
+24) External Links - 01:19:47
+25) Internal Links - 01:23:32
+26) Links Within Page - 01:25:53
+27) Empty Links - 01:30:10
+28) Sup And Sub Elements - 01:32:39
+29) Strong And Em Elements - 01:34:39
+30) Special Characters In Html - 01:37:02
+31) Unordered Lists - 01:38:58
+32) Ordered Lists - 01:41:25
+33) Nested Lists - 01:42:18
+34) Table Element - 01:43:57
+35) Forms - Input And Submit Elements - 01:46:10
+36) Forms - Textarea - Radio - Checkbox - 01:58:12
+37) Prettier And Code Formatter - 02:09:40
+38) Keyboard Shortcuts - 02:14:56
+39) External Resources - Head Element - 02:26:06
+40) Html Project Intro - 02:30:15
+41) Project Setup - 02:32:16
+42) Download Images - 02:35:17
+43) Logo, Heading, Navigation - 02:39:02
+44) Home Page Completed - 02:42:51
+45) About Page - 02:54:30
+46) Numbers Page - 02:58:09
+47) Contact Page - 03:04:14
+48) Resource Files - 03:09:11
+49) Text Editor Setup - 03:09:42
+50) Css Intro - 03:16:03
+51) Workspace Setup - 03:17:35
+52) Inline Css - 03:20:22
+53) Course Resources - 03:23:40
+54) Internal Css - 03:25:01
+55) External Css - 03:28:00
+56) Power Struggle - 03:39:40
+57) Basic Css Syntax - 03:44:17
+58) Element Selectors - 03:52:27
+59) Grouping Selectors - 03:55:15
+60) Id Selectors - 03:57:27
+61) Class Selectors - 04:02:09
+62) Id And Class Selector Summary - 04:06:17
+63) Div And Span Elements - 04:08:30
+64) CSS Inheritance - 04:16:44
+65) More Info On Inheritance - 04:20:08
+66) Last Rule, Specificity, Universal Selector - 04:22:30
+67) Colors Intro - 04:27:33
+68) Color And Background-Color Properties - 04:28:13
+69) Color Names - 04:32:33
+70) Rgb - 04:33:30
+71) Rgba - 04:37:46
+72) Hex - 04:44:33
+73) Vs-Code Color Options - 04:50:58
+74) External Resources - 04:52:57
+75) Units Intro - 04:55:39
+76) Pixels, Font-Size, Width, Height - 04:56:18
+77) Percent Values - 05:02:13
+78) Em Values - 05:05:44
+79) Rem Values - 05:11:42
+80) VH And VW - 05:14:41
+81) Default Browser Syles - 05:19:14
+82) Calc Function - 05:29:07
+83) Typography Intro - 05:33:38
+84) Font-Family - 05:34:07
+85) Font-Stack Generic Fonts - 05:36:47
+86) Google Fonts - 05:39:23
+87) Font-Weight Font-Style - 05:46:00
+88) Text-Align And Text-Indent - 05:53:30
+89) More Text Properties - 05:56:52
+90) Box-Model Intro - 06:04:31
+91) Padding - 06:04:53
+92) Margin - 06:13:28
+93) Border - 06:19:01
+94) Border-Radius, Negative Margin - 06:23:57
+95) Outline Property - 06:27:24
+96) Display Property Intro - 06:34:58
+97) Display Property - 06:35:19
+98) Basic Horizontal Centering - 06:43:26
+99) Mobile Navbar Example - 06:48:11
+100) Box-Sizing Border-Box - 06:58:29
+101) Display Inline-Block - 07:06:46
+102) Display:none, Opacity, Visibility - 07:09:29
+103) Background-Image Intro - 07:16:20
+104) Background Images Setup - 07:16:43
+105) Background-Image-Property - 07:19:43
+106) Background-Repeat - 07:27:45
+107) Background-Size - 07:34:07
+108) Background-Position - 07:36:58
+109) Background-Attachment - 07:41:18
+110) Linear-Gradients - 07:47:04
+111) Background Image Shortcuts Combined - 07:56:49
+112) Linear-Gradient Colorzilla - 08:06:56
+113) Float Position Intro - 08:11:08
+114) Float Property - 08:11:47
+115) Float Property Column Layout Example - 08:19:18
+116) Position Static - 08:25:59
+117) Position Relative - 08:30:44
+118) Position Absolute - 08:33:18
+119) Position Fixed - 08:38:42
+120) Media Quries - 08:42:30
+121) Z-Index - 08:57:07
+122) ::Before And ::After Pseudo Elements - 09:06:04
+123) Css Selectors Intro - 09:27:14
+124) Basic Selectors - 09:28:26
+125) Descendant Child Selectors - 09:31:07
+126) First Line And First Letter - 09:35:50
+127) :Hover Pseudo-Class Selector - 09:36:56
+128) Link Pseudo-Class Selectors - 09:40:03
+129) :Root Preudo-Class Selectors - 09:44:36
+130) Transform,Transition,And Animations - 09:51:01
+131) Transform:transition() - 09:52:17
+132) Transform:scale() - 09:58:52
+133) Transform:rotate() - 10:01:20
+134) Transform:skew() - 10:04:47
+135) Transition Property - 10:06:31
+136) Multiple Transition - 10:09:13
+137) Transition Delay - 10:11:11
+138) Transition-Timing Function - 10:16:36
+139) Animation - 10:25:51
+140) Animation-Fill-Mode - 10:35:51
+141) Last Module Intro - 10:40:53
+142) Css Variables - 10:41:32
+143) Font-Awesome Icons - 10:56:19
+144) Text-Shadow Box-Shadow - 11:07:55
+145) Browser Prefixes - 11:14:44
+146) Semantic Tags - 11:19:23
+147) Emmet Workflow - 11:24:11
