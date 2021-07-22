@@ -295,4 +295,67 @@ a pseudo-class is used to define a special state of an element.
 - style an element when a user mouss over it
 - style visisted and unvisited links differently
 - style an element when it gets focus
+
 ## syntax
+
+```
+selector:pseudo-class {
+  property: value;
+}
+```
+# Anchor Pseudo-classes
+```
+/* unvisited link */
+a:link {
+  color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+  color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+  color: #0000FF;
+}
+```
+<b>Note</b>:<br>
+<code>a:hover</code> Must come after <code>a:link</code> and <code>a:visited</code> in the CSS defination in order to be effective!<code>a:active</code> Must come after a <code>a:hover</code> in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive.
+
+## Pseudo-classes and CSS Classes
+Pseudo-classes can be combined with CSS classes:
+When you hover over the link in the example,it will change color:
+```
+a.highlight:hover {
+  color: #ff0000;
+}
+```
+## Simple Tooltip Hover
+hover over a div element to show a <code>\<p></code> element (like a tooltip)
+
+p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+div:hover p {
+  display: block;
+}
+
+## The :first-child Pseudo-class
+the <code>:first-child</code> pseudo-class matches a specified element that is the first child of another element.
+```
+ul li:first-child {
+  color: red;
+}
+```
+
+## The :lang Pseudo-class
+The <code>:lang<code> pseudo-class allows you to define special rules for different languages.

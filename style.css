@@ -18,3 +18,53 @@ h3 {
 #isID {
   color: goldenrod;
 }
+div:hover {
+  background-color: red;
+}
+div h1:hover {
+  background-color: green;
+  color: red;
+}
+
+div p:hover {
+  background-color: green;
+  color: red;
+}
+
+/* unvisited link */
+#myID:link {
+  background-color: #ff0000;
+}
+
+/* visited link */
+#myID:visited {
+  background-color: #00ff00;
+}
+
+/* mouse over link */
+#myID:hover {
+  background-color: #ff00ff;
+}
+
+/* selected link */
+#myID:active {
+  background-color: #0000ff;
+}
+
+/* ----------------------------- */
+.tooltip p {
+  display: none;
+  background-color: red;
+  padding: 20px;
+}
+.tooltip:hover p {
+  display: block;
+}
+/* ----------------------------- */
+ul li:first-child {
+  color: red;
+}
+
+q:lang(no) {
+  quotes: '~''~';
+}
