@@ -193,27 +193,105 @@ All the styles in a page will "cascade" into a new "virtual" style sheet by the 
   so, an inline style has the highest priority, and will override external and internal styles and browser defaults
 
 ## Specificity & When to use Selectors
+
 <hr>
 
 ## What is Specificity?
+
 It there are two or more conflicting CSS rules that point to the same element, the browser follows some rules to determine which one is most specific and therefore wins out.<br>
 Think of specificity as a score/rank that determines which style declarations are ultimately applied to an element.<br>
-The universal selector<code>(*)</code> has low specificity, while ID selectors are highly specific!<br>
+The universal selector<code>(\*)</code> has low specificity, while ID selectors are highly specific!<br>
 <code>Specificity is a common reason why you CSS- rules dont apply to some elements, although you think they should</code>
 
 ## Specificity hierarchy
+
 Every selector has its place in the specificity hierarchy. There are four categories which define the specificity level of a selector:<br>
-- <b>Inline styles </b> -  An inline style is attached directly to the element to be styled
+
+- <b>Inline styles </b> - An inline style is attached directly to the element to be styled
+
 ```
 <h1 style="color: #ffffff;">
 ```
-- <b>IDs </b> -  an ID is a unique identifier to the page elements, such as #navbar
+
+- <b>IDs </b> - an ID is a unique identifier to the page elements, such as #navbar
 
 - <b>Classes, attributes and pseudo-classes </b> - This category includes .classes, [attributes] and pseudo-classes such as :hover ,:focus etc.
 
-- <b>Elements and pseudo-elements </b> -  this category includes element names and pseudo-elements, such as h1, div, :before and :after
+- <b>Elements and pseudo-elements </b> - this category includes element names and pseudo-elements, such as h1, div, :before and :after
 
 ## How to Calculate Specificity?
-<code>Memorize how to calculate specificity!</code>
-Start at 0, and 1000 for style attribute, add 100 for each ID, add 10 for each attribute, class or pseudo-class, and 1 for each element name or pseudo-element.
 
+<code>Memorize how to calculate specificity!</code><br>
+Start at 0, and 1000 for style attribute, add 100 for each ID, add 10 for each attribute, class or pseudo-class, and 1 for each element name or pseudo-element.<br>
+sample:
+
+```
+A: h1
+B: #content h1
+C: <div id="content"><h1 style="color: #ffffff">Heading</h1></div>
+```
+
+- the specificity of A is 1 (one element)
+- the specificity of B is 101 (one ID reference and one element)
+- the specificity of C is 1000(inline styling)<br>
+
+## Specificity Rules
+
+<b>Equal specificity:the latest rule counts</b>- if the same rule is written twice into the external style sheet, then the lower rule in the style sheet is closer to the element to be styled, and therefore wil be applied:
+
+```
+h1 {background-color: yellow;}
+h1 {background-color: red;}
+```
+
+the latter rule is always applied
+<b>ID selectors have a higher specificity than attribute selectors</b>
+
+```
+div#a {background-color: green;}
+#a {background-color: yellow;}
+div[id=a] {background-color: blue;}
+```
+
+the first rule is more specific than the other two, and will be applied.
+
+<b>Contextual selectors are more specific than a single element selector</b>
+the embedded style sheet is closer to the element to be styled.
+
+```
+From external CSS file:
+#content h1 {background-color: red;}
+
+In HTML file:
+<style>
+#content h1 {
+  background-color: yellow;
+}
+</style>
+
+```
+
+the latter rule will be applied <br>
+
+<b>a class selector beats any number of element selectors</b>
+
+- a class selector such as .intro beats h1,p,div etc:
+
+```
+.intro {background-color: yellow;}
+h1 {background-color: red;}
+```
+
+<b>The universal selector and inherited values have a specificity of 0</b> - body and similar have a zero specificity. Inherited values also have a specificity of 0.
+
+## Pseudoselectors
+
+<hr>
+
+## Pseudo-Classes
+
+a pseudo-class is used to define a special state of an element.
+
+- style an element when a user mouss over it
+- style visisted and unvisited links differently
+- style an element when it gets focus

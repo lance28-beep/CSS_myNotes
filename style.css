@@ -1,8 +1,22 @@
 /* CSS file */
+* {
+  background-color: rebeccapurple;
+}
+/* body {
+  background-color: royalblue;
+} */
 
 #thisID {
- color:greenyellow;
+  color: greenyellow;
 }
 
+h3 {
+  color: red;
+}
 
-
+.isClass {
+  color: teal;
+}
+#isID {
+  color: goldenrod;
+}
