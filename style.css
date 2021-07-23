@@ -1,16 +1,9 @@
-.red {
-  color: red;
-}
-.blue {
-  color: blue;
-  background: grey;
+* {
+  background: #3a583a80;
 }
 
-#title {
-  font-size: 35px;
-  background: green;
-}
-
-.uppercase {
-  text-transform: uppercase;
+h1{
+  background:rgb(170, 78, 78);
+  color:rgba(255,255,255,0.1);
+  font-size:100px;
 }
