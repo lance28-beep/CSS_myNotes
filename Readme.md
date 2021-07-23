@@ -1118,3 +1118,39 @@ ul li a {
   padding: 40px;
 }
 ```
+
+<code>
+/* <br>
+display:none<br>
+opacity:0<br>
+visibility:hidden <br>
+*/</code><br>
+
+<img src='./img/opacity.PNG' width='500'>
+
+```
+div {
+  background: blue;
+  margin: 10px;
+  color: white;
+}
+
+.none {
+  display: none;
+}
+
+.opacity-1 {
+  opacity: 1;
+}
+
+.opacity-5 {
+  opacity: 0.5;
+}
+.opacity-0 {
+  opacity: 0;
+}
+.visibility {
+  visibility: hidden;
+}
+
+```
