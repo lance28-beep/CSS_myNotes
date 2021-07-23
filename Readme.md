@@ -966,7 +966,155 @@ Inline : Does not start and only take up as much as content space<br>
 -setting to default and make inline to block and block to inline.
 
 <code>
-/*
-Horizontal Centering
-*/
+CSS Layout - Horizontal & Vertical Align
+</code>
+
+<img src='./img/horizontal-centering.PNG' width='500'>
+
+```
+body {
+  text-align: center;
+}
+
+.block {
+  background: blue;
+  color: white;
+  margin: 0 auto;
+}
+.inline {
+  background: red;
+  color: white;
+  display: block;
+  margin: 0 auto;
+}
+
+```
+
+<code>
+Block: Top Bottom Margin Respected <br>
+Inline: Top Bottom Margin Not Respected <br>
+Mobile Navbar<br>
+list-style-type:property<br>
+descendant selectors
 </code><br>
+
+<img src='./img/inline.PNG' width='500'>
+<br>
+-inline margin and padding are not respected by the browser (top and bottom)
+
+```
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: #222;
+  color: red;
+  padding: 10px;
+  margin: 10px;
+}
+```
+
+<img src='./img/block.PNG' width='500'><br>
+-block margin and padding are respected by the browser
+(top and bottom)
+
+```
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+ul li a {
+  font-size: 0.75em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: #222;
+  color: red;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}
+```
+
+<img src='./img/inline-block2.PNG' width='500'><br>
+-using <code> display:inline-block</code> inline margin and padding will be respected by the browser in no longer need to set it to block<br>
+
+```
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+ul li a {
+  font-size: 0.75em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: #222;
+  color: red;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+```
+
+<code>
+  box-sizing: border-box;
+</code>
+ border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width.
+
+<img src='./img/border-box.PNG' width='500>'
+
+```
+.box-1,
+.box-2,
+.box-3 {
+  width: 200px;
+  height: 100px;
+  color: #fff;
+  box-sizing: border-box;
+}
+.box-1 {
+  background: red;
+  padding: 20px;
+}
+.box-2 {
+  background: blue;
+}
+.box-3 {
+  background: green;
+  padding: 40px;
+}
+```
