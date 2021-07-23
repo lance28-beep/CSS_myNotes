@@ -821,3 +821,85 @@ h2 {
 - border
 - margin
 - border-radius, negative margin
+
+## CSS Box Model
+
+<img src="https://www.washington.edu/accesscomputing/webd2/student/unit3/images/boxmodel.gif" width='500'>
+
+<code>padding</code>
+
+<img src='./img/padding.PNG' width='500'>
+
+```
+h1 {
+  background: red;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  padding-left: 25px;
+  padding-right: 50px;
+}
+
+/* short-hand */
+p {
+  background: blue;
+  /*padding: 50px; all side*/
+  /* padding:30px 60px;top-bottom/left-right */
+padding: 20px 40px 60px 10px;
+  /*
+  top padding is 20px
+  right padding is 40px
+  bottom padding is 60px
+  left padding is 10px
+  */
+}
+```
+
+<code>margin</code> <br>
+same principles of padding aside from it a margin.
+<img src='./img/margin.PNG' width='500'>
+
+```
+h1 {
+  background: red;
+  padding: 20px;
+  margin: 0;
+}
+
+p {
+  background: blue;
+  padding: 20px;
+  margin: 0;
+}
+```
+
+<code>border</code> <br>
+
+<img src='./img/border.PNG' width='500'>
+
+```
+h1 {
+  background: red;
+  padding: 20px;
+  margin: 20px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: green;
+}
+/* shorthand */
+p {
+  background: blue;
+  padding: 20px;
+  margin: calc(40px - 20px);
+  border: solid 10px red;
+}
+div {
+  width: 350px;
+  height: 20vh;
+  margin: 0 auto;
+  background: aqua;
+  border-radius: 50%;
+  border-bottom: groove 10px blue;
+  border-left: dashed 10px blue;
+  border-right: dashed 10px blue;
+}
+```

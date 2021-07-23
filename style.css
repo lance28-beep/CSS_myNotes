@@ -1,26 +1,25 @@
-* {
-  margin: 1rem;
-  padding: 0;
-  box-sizing: border-box;
+h1 {
+  background: red;
+  padding: 20px;
+  margin: 20px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: green;
 }
-a {
-  font-size: 5rem;
-  text-decoration: none;
-  color: royalblue;
+/* shorthand */
+p {
+  background: blue;
+  padding: 20px;
+  margin: calc(40px - 20px);
+  border: solid 10px red;
 }
-h2 {
-  text-transform: uppercase;
-  text-decoration: line-through;
-}
-.one {
-  line-height: 35px;
-  text-decoration: underline;
-}
-.two {
-  letter-spacing: 3px;
-  text-decoration: overline;
-}
-.three {
-  word-spacing: 2rem;
-  text-decoration: line-through;
+div {
+  width: 350px;
+  height: 20vh;
+  margin: 0 auto;
+  background: aqua;
+  border-radius: 50%;
+  border-bottom: groove 10px blue;
+  border-left: dashed 10px blue;
+  border-right: dashed 10px blue;
 }
