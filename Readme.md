@@ -194,6 +194,23 @@ All the styles in a page will "cascade" into a new "virtual" style sheet by the 
 
 ## Specificity & When to use Selectors
 
+<code?>Last Rule and Specificity \* Universal Selector </code><br>
+sample:
+
+```
+p{
+  color:red;
+}
+
+
+p{
+  color :blue
+}
+
+```
+
+-ma oooverwrite yung first declaration.dito na papasuk yung last rule.ang susundin na style or declaration ng selector is yung nasa bottom part or last entry.
+
 <hr>
 
 ## What is Specificity?
@@ -303,7 +320,9 @@ selector:pseudo-class {
   property: value;
 }
 ```
+
 # Anchor Pseudo-classes
+
 ```
 /* unvisited link */
 a:link {
@@ -325,32 +344,39 @@ a:active {
   color: #0000FF;
 }
 ```
+
 <b>Note</b>:<br>
 <code>a:hover</code> Must come after <code>a:link</code> and <code>a:visited</code> in the CSS defination in order to be effective!<code>a:active</code> Must come after a <code>a:hover</code> in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive.
 
 ## Pseudo-classes and CSS Classes
+
 Pseudo-classes can be combined with CSS classes:
 When you hover over the link in the example,it will change color:
+
 ```
 a.highlight:hover {
   color: #ff0000;
 }
 ```
+
 ## Simple Tooltip Hover
+
 hover over a div element to show a <code>\<p></code> element (like a tooltip)
 
 p {
-  display: none;
-  background-color: yellow;
-  padding: 20px;
+display: none;
+background-color: yellow;
+padding: 20px;
 }
 
 div:hover p {
-  display: block;
+display: block;
 }
 
 ## The :first-child Pseudo-class
+
 the <code>:first-child</code> pseudo-class matches a specified element that is the first child of another element.
+
 ```
 ul li:first-child {
   color: red;
@@ -358,10 +384,84 @@ ul li:first-child {
 ```
 
 ## The :lang Pseudo-class
-The <code>:lang<code> pseudo-class allows you to define special rules for different languages.
 
+The <code>:lang</code> pseudo-class allows you to define special rules for different languages.
 
 Notes:
-##  Div and Span - used for grouping
+
+## Div and Span - used for grouping
+
 - div - used to group multiple elements
 - span - used to group inline content
+
+## Inheritance
+
+- children inherit styles from parent, unless have their own styles.
+
+## COLORS
+
+- color, background-color,background
+- color names
+- rgb,rgba
+- hex
+- visual studio code color options
+- external resources
+
+<b>color properties</b><br>
+-control the color of the element
+<b>color background</b><br>
+-control the background color of the element
+
+```
+#first{
+  color:white;
+  background-color:black;
+}
+```
+
+<b>color names > 140<b><br>
+
+```
+color:red;
+color:green;
+etc..
+/*ctrl + tab(triger vs code suggestion*/
+```
+
+<b>RGB (red,green,blue) 0-255 </b><br>
+
+```
+color:rgb(255,0,0) /*red*/
+```
+
+<b>RGBA A-opacity/transparency 0-1 </b><br>
+
+```
+color:rgba(0,255,0,0.5)
+```
+<b>HSL</b><br>
+<b>Hex Value #RRGGBB</b><br>
+<b>123456789 A(10) B(11) C(12) D(13) E(14) F(15) </b><br>
+<b>10   11   12   13   14   15 </b><br>
+<b>#FF0000 - red</b><br>
+<b>#00ff00 - green</b><br>
+```
+color:#ff0000
+```
+
+## Units
+- absolute,relative
+- pixels
+- em,rem
+- vw ,vh
+- font-size, height, width
+<hr>
+
+<b>Pixels</b><br>
+-Absolute values, one dot on the screen<br>
+<b>Pixels</b><br>
+-Absolute values, one dot on the screen<br>
+<b>Pixels</b><br>
+-Absolute values, one dot on the screen<br>
+<b>Pixels</b><br>
+-Absolute values, one dot on the screen<br>
