@@ -1,9 +1,11 @@
+/* reset default margin */
 * {
-  background: #3a583a80;
+  margin: 0;
 }
 
-h1{
-  background:rgb(170, 78, 78);
-  color:rgba(255,255,255,0.1);
-  font-size:100px;
+.navbar {
+  background: blue;
+  height: 100px;
+  color: white;
+  font-size: 3rem;
 }

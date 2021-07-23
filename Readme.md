@@ -419,7 +419,7 @@ Notes:
 }
 ```
 
-<b>color names > 140<b><br>
+<b>color names > 140</b><br>
 
 ```
 color:red;
@@ -469,5 +469,113 @@ color:#ff0000
 <b>HEIGHT</b><br>
 -control height of an element<br>
 
+```
+h1{
+  background:rgb(170, 78, 78);
+  color:rgba(255,255,255,0.1);
+  font-size:100px;
+  width: 500px;
+  height:500px;
+}
+```
+
 <b>% - parent</b><br>
 -relative unit/value. Depends on the parent<br>
+<img src='./img/relative.PNG' width="500"> <br>
+
+```
+/* parent element */
+.container{
+  background:#c54343;
+  width:200px;
+  height: 200px;
+}
+
+/* child element */
+.containerTwo{
+background:rgb(92, 92, 194);
+width: 50%;
+height: 50%;
+}
+```
+
+<code>
+/* <br>
+em - relative depends on parent<br>
+1em = 16px default browser style;<br>
+1em = base value <br>
+*/
+</code>
+<img src="./img/em.PNG" width='500'>
+
+```
+/* parent element */
+div {
+  font-size: 10px;
+}
+/* relative element */
+.relative {
+  font-size: 2em;
+}
+
+/* absolute element */
+.absolute {
+  font-size: 32px;
+}
+```
+
+<code>
+/* <br>
+rem - relative depends on root<br>
+1em = 16px default browser style;<br>
+*/
+</code> <br>
+<img src="./img/rem.PNG" width="500">
+
+```
+/* root element */
+html{
+  font-size: 32px;
+}
+/* parent element */
+div {
+  font-size: 10px;
+}
+/* relative element */
+.relative {
+  font-size: 2rem;
+}
+/* absolute element */
+.absolute {
+  font-size: 32px;
+}
+
+```
+
+<code>
+/* <br>
+vh - height - percent of the screen<br>
+vw - width - percent of the screen<br>
+*/
+</code> <br>
+<img src="./img/screenview.PNG">
+
+```
+.header{
+  width: 50vw;
+  height:50vh;
+  background: red;
+}
+.banner{
+  width: 100vw;
+  height:100vh;
+  background: blue;
+}
+```
+<code>
+/* <br>
+calc()<br>
+perform math operations + - *<br>
+mix and match values<br>
+*/
+</code> <br>
