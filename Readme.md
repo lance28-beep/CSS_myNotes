@@ -903,3 +903,70 @@ div {
   border-right: dashed 10px blue;
 }
 ```
+
+<code>outline & offset</code> <br>
+
+<img src='./img/outline.PNG' width='500'>
+
+```
+button {
+  padding: 20px;
+  background: greenyellow;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin: 20px;
+}
+button:nth-child(1) {
+  border: 5px solid royalblue;
+}
+
+button:nth-child(2) {
+  border: none;
+  outline: 5px solid royalblue;
+}
+
+button:nth-child(3) {
+  border: none;
+  outline: 5px solid royalblue;
+  outline-offset: -10px;
+}
+```
+
+## CSS tutorial
+
+- display
+- block
+- inline
+- inline-block
+- box-sizing:border-box
+
+<code>
+/*<br>
+Default displays property<br>
+Block : Always starts a new line and takes full width <br>
+Inline : Does not start and only take up as much as content space<br>
+*/
+</code><br>
+
+<img src='./img/inline-block.PNG' width='500'>
+
+```
+.block {
+  background: blue;
+  color: white;
+  display: inline;
+}
+.inline {
+  background: red;
+  color: white;
+  display: block;
+}
+```
+
+-setting to default and make inline to block and block to inline.
+
+<code>
+/*
+Horizontal Centering
+*/
+</code><br>

@@ -1,25 +1,12 @@
-h1 {
-  background: red;
-  padding: 20px;
-  margin: 20px;
-  border-style: solid;
-  border-width: 10px;
-  border-color: green;
+body {
+  text-align: center;
 }
-/* shorthand */
-p {
+
+.block {
   background: blue;
-  padding: 20px;
-  margin: calc(40px - 20px);
-  border: solid 10px red;
+  color: white;
 }
-div {
-  width: 350px;
-  height: 20vh;
-  margin: 0 auto;
-  background: aqua;
-  border-radius: 50%;
-  border-bottom: groove 10px blue;
-  border-left: dashed 10px blue;
-  border-right: dashed 10px blue;
+.inline {
+  background: red;
+  color: white;
 }
