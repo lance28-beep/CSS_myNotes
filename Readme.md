@@ -439,17 +439,20 @@ color:rgb(255,0,0) /*red*/
 ```
 color:rgba(0,255,0,0.5)
 ```
+
 <b>HSL</b><br>
 <b>Hex Value #RRGGBB</b><br>
 <b>123456789 A(10) B(11) C(12) D(13) E(14) F(15) </b><br>
-<b>10   11   12   13   14   15 </b><br>
+<b>10 11 12 13 14 15 </b><br>
 <b>#FF0000 - red</b><br>
 <b>#00ff00 - green</b><br>
+
 ```
 color:#ff0000
 ```
 
 ## Units
+
 - absolute,relative
 - pixels
 - em,rem
@@ -459,9 +462,12 @@ color:#ff0000
 
 <b>Pixels</b><br>
 -Absolute values, one dot on the screen<br>
-<b>Pixels</b><br>
--Absolute values, one dot on the screen<br>
-<b>Pixels</b><br>
--Absolute values, one dot on the screen<br>
-<b>Pixels</b><br>
--Absolute values, one dot on the screen<br>
+<b>FONT-SIZE</b><br>
+-control size of the font<br>
+<b>WIDTH</b><br>
+-control width of the element<br>
+<b>HEIGHT</b><br>
+-control height of an element<br>
+
+<b>% - parent</b><br>
+-relative unit/value. Depends on the parent<br>
