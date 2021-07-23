@@ -674,6 +674,7 @@ font-style<br>
 */
 </code> <br>
 <img src='./img/font-weight.PNG' width='500'>
+
 ```
 /* font-weight */
 span:nth-child(1) {
@@ -723,10 +724,100 @@ p:nth-child(4) {
   font-style: oblique;
 }
 ```
+
 <code>
 /* <br>
 text-align<br>
-font-style<br>
 */
 </code> <br>
 
+<img src='./img/text-align.PNG' width='500'>
+
+```
+* {
+  margin: 1rem;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: right;
+}
+
+.main {
+  text-align: center;
+}
+
+.two {
+  text-align: left;
+}
+```
+
+<code>
+/* <br>
+text-indent<br>
+*/
+</code> <br>
+
+<img src='./img/indent.PNG' width='500'>
+
+```
+* {
+  margin: 1rem;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.one {
+  text-indent: 10rem;
+}
+```
+
+<code>
+/* <br>
+<b>line-height</b> (relative)<br>
+letter-spacing<br>
+word-spacing<br>
+text-transform<br>
+text-decoration<br>
+*/
+</code> <br>
+
+<img src='./img/text-decoration.PNG' width='500'>
+
+```
+* {
+  margin: 1rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  font-size: 5rem;
+  text-decoration: none;
+  color: royalblue;
+}
+h2 {
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+.one {
+  line-height: 35px;
+  text-decoration: underline;
+}
+.two {
+  letter-spacing: 3px;
+  text-decoration: overline;
+}
+.three {
+  word-spacing: 2rem;
+  text-decoration: line-through;
+}
+
+```
+
+## CSS Tutorial
+
+- CSS Box Model
+- padding
+- border
+- margin
+- border-radius, negative margin

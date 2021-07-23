@@ -2,14 +2,25 @@
   margin: 1rem;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace;
-  text-align: right;
 }
-
-.main {
-  text-align: center;
+a {
+  font-size: 5rem;
+  text-decoration: none;
+  color: royalblue;
 }
-
+h2 {
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+.one {
+  line-height: 35px;
+  text-decoration: underline;
+}
 .two {
-  text-align: left;
+  letter-spacing: 3px;
+  text-decoration: overline;
+}
+.three {
+  word-spacing: 2rem;
+  text-decoration: line-through;
 }
