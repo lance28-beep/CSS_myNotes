@@ -9,3 +9,8 @@
   color: white;
   font-size: 3rem;
 }
+
+.banner {
+  background: red;
+  min-height: calc(100vh - 100px);
+}

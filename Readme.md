@@ -572,6 +572,7 @@ vw - width - percent of the screen<br>
   background: blue;
 }
 ```
+
 <code>
 /* <br>
 calc()<br>
@@ -579,3 +580,23 @@ perform math operations + - *<br>
 mix and match values<br>
 */
 </code> <br>
+<img src="./img/calc.PNG" width='500'>
+
+```
+/* reset default margin */
+* {
+  margin: 0;
+}
+
+.navbar {
+  background: blue;
+  height: 100px;
+  color: white;
+  font-size: 3rem;
+}
+
+.banner {
+  background: red;
+  min-height: calc(100vh - 100px);
+}
+```
