@@ -600,3 +600,133 @@ mix and match values<br>
   min-height: calc(100vh - 100px);
 }
 ```
+
+## TYPOGRAPHY
+
+- properties
+- font-stack, generic family
+- google fonts
+
+<code>
+/* <br>
+font-size font-family<br>
+*/
+</code> <br>
+
+<img src="./img/font-family.PNG" width='500'>
+
+```
+body {
+font-family: helvetica;
+}
+h1 {
+font-family: verdana;
+}
+
+```
+
+<code>
+/* <br>
+font-stack generic-family<br>
+serif, sans-serif, cursive, fantasy, monospace<br>
+*/
+</code> <br>
+A font stack is a list of fonts in the CSS font-family declaration. ... A font stack allows you to control the look of the fonts on the web page even if the site visitor's computer doesn't have the initial font that you called for
+ <img src='./img/font-stack.PNG' width='500'>
+
+```
+body {
+  font-family: helvetica;
+}
+h1 {
+  font-family: 'Courier New', Courier, monospace
+}
+```
+
+<code>
+/* <br>
+Google Fonts<br>
+*/
+</code> <br>
+
+[fonts.google.com](https://fonts.google.com/)
+
+<img src='./img/google-fonts.PNG' width='500'>
+
+```
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+
+body {
+  font-family: helvetica;
+}
+h1 {
+  font-family: 'Fuggles', cursive;
+  font-size:4rem;
+  word-spacing: .5rem;
+}
+
+```
+
+<code>
+/* <br>
+font-weight<br>
+font-style<br>
+*/
+</code> <br>
+<img src='./img/font-weight.PNG' width='500'>
+```
+/* font-weight */
+span:nth-child(1) {
+  font-weight: 100;
+}
+span:nth-child(2) {
+  font-weight: 200;
+}
+span:nth-child(3) {
+  font-weight: 300;
+}
+span:nth-child(4) {
+  font-weight: 400;
+}
+span:nth-child(5) {
+  font-weight: 500;
+}
+span:nth-child(6) {
+  font-weight: 600;
+}
+span:nth-child(7) {
+  font-weight: 700;
+}
+span:nth-child(8) {
+  font-weight: 800;
+}
+span:nth-child(9) {
+  font-weight: 900;
+}
+p:nth-child(1) {
+  font-weight: lighter;
+}
+p:nth-child(2) {
+  font-weight: normal;
+}
+p:nth-child(3) {
+  font-weight: bold;
+}
+p:nth-child(4) {
+  font-weight: bolder;
+}
+/* font-style */
+.italic {
+  font-style: italic;
+}
+.oblique {
+  font-style: oblique;
+}
+```
+<code>
+/* <br>
+text-align<br>
+font-style<br>
+*/
+</code> <br>
+
