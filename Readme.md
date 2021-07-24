@@ -1341,3 +1341,108 @@ div {
 ```
 
 [www.colorzilla.com]('https://www.colorzilla.com/gradient-editor/)
+
+## CSS Tutorial
+
+- float, clear
+- position:static,relative,absolute,fixed
+- media-queries
+- z-index
+- ::before and ::after pseudo elements
+
+<b>Overflow</b>
+The CSS overflow property controls what happens to content that is too big to fit into an area.
+<br>
+The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
+<br>
+The overflow property has the following values:
+<br>
+
+- visible - Default. The overflow is not clipped. The content renders outside the element's box
+- hidden - The overflow is clipped, and the rest of the content will be invisible
+- scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content
+- auto - Similar to scroll, but it adds scrollbars only when necessary
+
+<code>
+Note: The overflow property only works for block elements with a specified height.
+</code><br>
+
+<b>overflow:visible;</b><br>
+By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box:<br>
+
+<img src='./img/overflow-visible.PNG' width='500'>
+
+```
+.banner {
+  border: 5px solid red;
+  padding: 10px;
+  width:200px;
+  height:100px;
+  overflow:visible; /*default*/
+}
+flow: hidden</b><br>
+With the hidden value, the overflow is clipped, and the rest of the content is hidden:<br>
+
+<img sr
+```
+
+<b>overc='./img/overflow-hidden.PNG' width='500'>
+
+```
+.banner {
+  border: 5px solid red;
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+}
+```
+
+<b>overflow: scroll</b><br>
+Setting the value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):<br>
+
+<img src='./img/overflow-scroll.PNG' width='500'>
+
+```
+.banner {
+  border: 5px solid red;
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+  overflow: scroll;
+}
+```
+
+<b>overflow: auto</b><br>
+The auto value is similar to scroll, but it adds scrollbars only when necessary:<br>
+
+<img src='./img/overflow-auto.PNG' width='500'>
+
+```
+.banner {
+  border: 5px solid red;
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+  overflow: auto;
+}
+```
+
+<b>overflow-x and overflow-y/b><br>
+The overflow-x and overflow-y properties specifies whether to change the overflow of content just horizontally or vertically (or both):<br>
+
+- <b>overflow-x </b>specifies what to do with the left/right edges of the content.
+- <b>overflow-y </b>specifies what to do with the top/bottom edges of the content.
+
+<img src='./img/overflow-xy.PNG' width='500'>
+
+```
+.banner {
+  border: 5px solid red;
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+```
