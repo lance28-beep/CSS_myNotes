@@ -904,6 +904,15 @@ div {
 }
 ```
 
+<code>Border Style</code>
+
+
+<img src="./img/border-style.PNG">
+
+
+
+
+<border>
 <code>outline & offset</code> <br>
 
 <img src='./img/outline.PNG' width='500'>
@@ -950,6 +959,8 @@ Inline : Does not start and only take up as much as content space<br>
 
 <img src='./img/inline-block.PNG' width='500'>
 
+<img src="./img/inline2.PNG" width='500'>
+
 ```
 .block {
   background: blue;
@@ -970,6 +981,7 @@ CSS Layout - Horizontal & Vertical Align
 </code>
 
 <img src='./img/horizontal-centering.PNG' width='500'>
+<img src="./img/block3.PNG" width='500'>
 
 ```
 body {
@@ -1059,6 +1071,7 @@ ul li a {
 ```
 
 <img src='./img/inline-block2.PNG' width='500'><br>
+<img src='./img/inline-block3.PNG' width='500'><br>
 -using <code> display:inline-block</code> inline margin and padding will be respected by the browser in no longer need to set it to block<br>
 
 ```
@@ -1153,4 +1166,19 @@ div {
   visibility: hidden;
 }
 
+Note:
+display: none;
+-- completely taken out the element.
+opacity:0;
+visibility:0;
+-- element still exist but and content are only hidden
 ```
+
+## CSS Tutorial
+- background:url('image.jpeg');
+- background-repeat
+- background-size
+- background-position
+- background-attachment
+- shorthand syntax
+
