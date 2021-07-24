@@ -945,6 +945,7 @@ button:nth-child(3) {
 - inline-block
 - box-sizing:border-box
 
+<img src='./img/display.PNG' width='500'>
 <code>
 /*<br>
 Default displays property<br>
@@ -953,7 +954,7 @@ Inline : Does not start and only take up as much as content space<br>
 */
 </code><br>
 
-<img src='./img/inline-block.PNG' width='500'>
+<img src='./img/inline-block.PNG' width='500'><br>
 
 <img src="./img/inline2.PNG" width='500'>
 
@@ -974,9 +975,9 @@ Inline : Does not start and only take up as much as content space<br>
 
 <code>
 CSS Layout - Horizontal & Vertical Align
-</code>
+</code><br>
 
-<img src='./img/horizontal-centering.PNG' width='500'>
+<img src='./img/horizontal-centering.PNG' width='500'><br>
 <img src="./img/block3.PNG" width='500'>
 
 ```
@@ -1137,8 +1138,8 @@ visibility:hidden <br>
 
 notes: <br>
 display:none - remove from the flow, hide element collapse the space <br>
-opacity:0;visibility:hidden; - hides element preserves the space.
-<img src='./img/opacity.PNG' width='500'>
+opacity:0;visibility:hidden; - hides element preserves the space.<br>
+<img src='./img/opacity.PNG' width='500'><br>
 
 ```
 div {
@@ -1380,13 +1381,12 @@ By default, the overflow is visible, meaning that it is not clipped and it rende
   height:100px;
   overflow:visible; /*default*/
 }
-flow: hidden</b><br>
-With the hidden value, the overflow is clipped, and the rest of the content is hidden:<br>
-
-<img sr
 ```
 
-<b>overc='./img/overflow-hidden.PNG' width='500'>
+<b>flow: hidden</b><br>
+With the hidden value, the overflow is clipped, and the rest of the content is hidden:<br>
+
+<img src='./img/overflow-hidden.PNG' width='500'>
 
 ```
 .banner {
@@ -1428,7 +1428,7 @@ The auto value is similar to scroll, but it adds scrollbars only when necessary:
 }
 ```
 
-<b>overflow-x and overflow-y/b><br>
+<b>overflow-x and overflow-y/b></b><br>
 The overflow-x and overflow-y properties specifies whether to change the overflow of content just horizontally or vertically (or both):<br>
 
 - <b>overflow-x </b>specifies what to do with the left/right edges of the content.
@@ -1444,5 +1444,79 @@ The overflow-x and overflow-y properties specifies whether to change the overflo
   height: 100px;
   overflow-y: hidden;
   overflow-x: scroll;
+}
+```
+
+<b>float and clear</b><br/>
+
+<b>float</b> property specifies how an element should float.<br>
+<b>clear</b> property specifies what elements can float beside the cleared element and on which side.
+
+<b>The float Property</b><br>
+The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.<br>
+
+<b>Float values</b><br>
+
+- <code>left</code> - The element floats to the left of its container
+- <code>right</code> - The element floats to the right of its container
+- <code>none</code> - The element does not float (will be displayed just where - it occurs in the text). This is default
+- <code>inherit</code> - The element inherits the float value of its parent
+
+<br>
+<code>Float:right</code><br>
+specifies that an image should float to the right in a text<br>
+<img src="./img/float-right.PNG" width='500'>
+<br>
+
+```
+* {
+  margin: 0.5rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  border: 5px solid red;
+  padding: 10px;
+  width: calc(100vw - 1rem);
+  height: 200px;
+  overflow: hidden;
+  margin: auto;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  float: right;
+}
+```
+
+
+<br>
+<code>Float:left</code><br>
+specifies that an image should float to the left in a text<br>
+<img src="./img/float-left.PNG" width='500'>
+<br>
+
+```
+* {
+  margin: 0.5rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  border: 5px solid red;
+  padding: 10px;
+  width: calc(100vw - 1rem);
+  height: 200px;
+  overflow: hidden;
+  margin: auto;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  float: left;
 }
 ```
