@@ -1568,5 +1568,119 @@ p {
 }
 ```
 
-<code><strong>"clearfix Hack"!</strong><code><br>
-<img src='./img/clearFix.PNG'><br>
+<code><strong>"clearfix Hack"!</strong></code><br>
+if a floated element is taller than the containing element, it will "overflow" outside of its container.We can then add a <code>clearfix hack</code> to solve this problem:
+<br>
+
+<img src='./img/overflow-auto2.PNG' width='500'>
+
+```
+* {
+  margin: 0.5rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  border: 5px solid red;
+  padding: 10px;
+  overflow: auto;
+  margin: auto;
+}
+img {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+```
+
+-Note<br>
+the <code>overflow:auto</code> clearfix works well as long as you are able to keep control of your margins and padding (else you might see scrollbars).the <b>new, modern clearfix hack</b> however, is safer to use:<br>
+
+<code>new modern clearfix hack</code><br>
+<img src='./img/clearFixModern.PNG' width='500'>
+
+<b>Position Property</b><br>
+specifies the type of positioning method used for an element (static, relative, absolute and sticky<br>
+
+<code>Position Values</code>
+
+- static
+  > <code>default</code>, always positioned according to the normal flow
+- relative
+  > position relative to its normal positioned.
+  > top,bottom, left, right
+- fixed
+- absolute
+- sticky
+
+Notes:<br>
+elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the <code>position</code> property is set first.they will also work differently depending on the position value.<br>
+
+<b>static</b><br>
+<img src='./img/static.PNG' width='500'>
+-static default position
+
+```
+* {
+  margin: 0.5rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  border: 3px solid red;
+  background: yellow;
+  margin: 4px;
+}
+
+.one {
+  background: blue;
+  color: white;
+}
+
+.two {
+  background: greenyellow;
+}
+
+.special {
+  background: hotpink;
+  font-size: 20px;
+}
+```
+
+<b>relative</b><br>
+<img src='./img/static.PNG' width='500'>
+-same with static<br>
+-unlike with static.relatice are capable to add or callibrate top,bottom,left and right
+
+```
+* {
+  margin: 0.5rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  border: 3px solid red;
+  background: yellow;
+  margin: 4px;
+}
+
+.one {
+  background: blue;
+  color: white;
+  position: relative;
+  top: 200px;
+}
+
+.two {
+  background: greenyellow;
+}
+
+.special {
+  background: hotpink;
+  font-size: 20px;
+}
+
+```
