@@ -1491,7 +1491,6 @@ img {
 }
 ```
 
-
 <br>
 <code>Float:left</code><br>
 specifies that an image should float to the left in a text<br>
@@ -1520,3 +1519,54 @@ img {
   float: left;
 }
 ```
+
+<br>
+<b>clear Property</b><br>
+When we use the <code>float</code> property, and we want the next element below (not on right or left), we will have to use the <code>clear</code> property.<br>
+The <code>clear</code> property specifies what should happen with the element that is next to a floating element.
+<br>
+
+<b>clear Property Values</b>
+
+- <code>none</code> - The element is not pushed below left or right floated elements. This is default
+- <code>left</code> - The element is pushed below left floated elements
+- <code>right</code> - The element is pushed below right floated elements
+- <code>both </code>- The element is pushed below both left and right floated elements
+- <code>inherit</code> - The element inherits the clear value from its parent
+
+Notes<br>
+<code>
+When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.
+</code><br>
+
+sample:<br>
+<img src="./img/clear.PNG" width='500'>
+
+```
+* {
+  margin: 0.5rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  border: 5px solid red;
+  padding: 10px;
+  width: calc(100vw - 1rem);
+  height: 200px;
+  overflow: hidden;
+  margin: auto;
+}
+img {
+  width: 100px;
+  height: 100px;
+    float: left;
+}
+
+p {
+  float: left;
+}
+```
+
+<code><strong>"clearfix Hack"!</strong><code><br>
+<img src='./img/clearFix.PNG'><br>

@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.banner {
+div {
   border: 5px solid red;
   padding: 10px;
   width: calc(100vw - 1rem);
@@ -12,9 +12,12 @@
   overflow: hidden;
   margin: auto;
 }
-
 img {
   width: 100px;
   height: 100px;
-  float: none;
+    float: left;
+}
+
+p {
+  float: left;
 }
