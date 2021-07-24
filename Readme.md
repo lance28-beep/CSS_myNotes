@@ -1135,6 +1135,9 @@ opacity:0<br>
 visibility:hidden <br>
 */</code><br>
 
+notes: <br>
+display:none - remove from the flow, hide element collapse the space <br>
+opacity:0;visibility:hidden; - hides element preserves the space.
 <img src='./img/opacity.PNG' width='500'>
 
 ```
@@ -1291,6 +1294,7 @@ div {
 }
 ```
 
+sample overlays using linear-gradient<br>
 <img src="./img/adding-gradient.PNG"><br>
 
 ```
@@ -1327,3 +1331,13 @@ div {
   background-attachment: fixed;
 }
 ```
+
+```
+/* short-hand property */
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url(./img/big-image.jpeg) center/cover fixed no-repeat;
+}
+```
+
+[www.colorzilla.com]('https://www.colorzilla.com/gradient-editor/)
