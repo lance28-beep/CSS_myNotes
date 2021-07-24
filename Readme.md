@@ -906,11 +906,7 @@ div {
 
 <code>Border Style</code>
 
-
 <img src="./img/border-style.PNG">
-
-
-
 
 <border>
 <code>outline & offset</code> <br>
@@ -1175,10 +1171,123 @@ visibility:0;
 ```
 
 ## CSS Tutorial
+
 - background:url('image.jpeg');
 - background-repeat
 - background-size
 - background-position
 - background-attachment
 - shorthand syntax
+
+The background property in CSS allows you to control the background of any element (what paints underneath the content in that element). It is a shorthand property, which means that it allows you to write what would be multiple CSS properties in one.
+
+```
+body {
+  background:
+     url(sweettexture.jpg)    /* image */
+     top center / 200px 200px /* position / size */
+     no-repeat                /* repeat */
+     fixed                    /* attachment */
+     padding-box              /* origin */
+     content-box              /* clip */
+     red;                     /* color */
+}
+
+```
+
+<b>background-color</b> property specifies the background color of an element.
+
+```
+body {
+  background-color: lightblue;
+}
+
+```
+
+With CSS, a color is most often specified by:
+
+a valid color name - like "red"
+a HEX value - like "#ff0000"
+an RGB value - like "rgb(255,0,0)"
+
+<b>CSS background-image</b>
+-specifies an image to use as the background of an element.
+
+By default, the image is repeated so it covers the entire element.
+
+```
+body {
+  background-image: url("paper.gif");
+}
+```
+
+<b>CSS background-repeat</b><br>
+By default, the background-image property repeats an image both horizontally and vertically.<br>
+note:To repeat an image vertically, set background-repeat: repeat-y;<br>
+note:To repeat an image horizontally, set background-repeat: repeat-x;<br>
+
+```
+body {
+  background-image: url("gradient_bg.png");
+  background-repeat: repeat-x;
+}
+```
+
+<b>background-repeat: no-repeat</b><br>
+Showing the background image only once
+
+```
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+}
+```
+
+<b>background-position</b><br>
+used to specify the position of the background image.
+
+```
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+```
+
+<b>Linear-gradient</b><br>
+<img src="./img/gradient.PNG" width="500">
+
+```
+body {
+  display: flex;
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+
+.one {
+  background: linear-gradient(red, green);
+}
+.two {
+  background: linear-gradient(to top, red, green, blue, yellow);
+}
+
+.three {
+  background: linear-gradient(36deg, red, green);
+}
+.four {
+  background: linear-gradient(to top left, red, green);
+}
+
+.five {
+  background: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.9)
+  );
+}
+```
 

@@ -1,16 +1,31 @@
+body {
+  display: flex;
+}
+
 div {
-  height: 400px;
-  color: red;
+  width: 150px;
+  height: 150px;
+  margin: 5px;
 }
 
-.big-image {
-  background: url(big-image.jpeg);
+.one {
+  background: linear-gradient(red, green);
+}
+.two {
+  background: linear-gradient(to top, red, green, blue, yellow);
 }
 
-.small-image {
-  background: url('/img/small-image.jpg');
+.three {
+  background: linear-gradient(36deg, red, green);
+}
+.four {
+  background: linear-gradient(to top left, red, green);
 }
 
-.folder-image {
-  background: url(./img/small-image.jpg);
+.five {
+  background: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.9)
+  );
 }
