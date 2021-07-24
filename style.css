@@ -1,31 +1,32 @@
-body {
-  display: flex;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 div {
-  width: 150px;
-  height: 150px;
-  margin: 5px;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  color: orange;
 }
 
-.one {
-  background: linear-gradient(red, green);
-}
-.two {
-  background: linear-gradient(to top, red, green, blue, yellow);
-}
-
-.three {
-  background: linear-gradient(36deg, red, green);
-}
-.four {
-  background: linear-gradient(to top left, red, green);
+.banner {
+  background: url(./img/big-image.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.five {
-  background: linear-gradient(
-    to top left,
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.9)
-  );
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url(./img/big-image.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
