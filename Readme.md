@@ -1899,3 +1899,60 @@ img {
 
 
 ```
+
+<code>pseudo elements <b>::before</b> <b>::after</b> content not element:<br>
+content:'' - required<br>
+img -- does not work</code> <br>
+<img src='./img/beforeAfter.PNG' width='500'> 
+
+```
+
+```* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  width: 60vw;
+  margin: 100px auto;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+div::before {
+  content: '';
+  border: 2px solid grey;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+  transition: all 0.5s linear;
+}
+
+div::after {
+  content: '';
+  border: 2px solid red;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+  transition: all 0.5s linear;
+}
+
+div:hover::after,
+div:hover::before {
+  top: 0;
+  left: 0;
+}
