@@ -2013,10 +2013,107 @@ p::first-line{
 - animation: (change over time with points)
 <hr>
 
-
 <br>
 <strong> CSS Tutorial </strong><br>
 - transform: translate(), rotate(), scale(),skew()
 - transition (change over time)
 - animation: (change over time with points)
 <hr>
+
+<code>transform:translate</code><br>
+-the translate method moves an element from its current position(according to the parameters given for the x-axis and the y-axis)<br>
+<img src='./img/transfor-translate.PNG' width='500'>
+
+```
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+.one {
+  background: red;
+  transform: translateX(50%);
+}
+
+.two {
+  background: green;
+  transform: translateY(50%);
+  position:relative;
+  z-index: 1;
+}
+
+.three {
+  background: blue;
+  transform: translate(-25%, 100%);
+}
+```
+
+<code>transform:scale</code><br>
+-the scale method increases or decreases the size of an element (according to the parameters given for the width and height)<br>
+<img src='./img/scale.PNG' width='500'>
+
+```
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+.one {
+  background: red;
+  transform: scaleX(0.5);
+}
+
+.two {
+  background: green;
+  transform: scaleY(5);
+}
+
+.three {
+  background: blue;
+  transform: scale(2,4);
+}
+```
+
+<code>transform:rotate</code><br>
+-the rotate method rotates an element clockwise or counter-clockwise according to a given degree/<br>
+<img src='./img/rotate.PNG' width='500'>
+
+```
+* {
+  margin: 2rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  display:inline-block;
+}
+.one {
+  background: red;
+  transform: rotate(10deg);
+}
+
+.two {
+  background: green;
+   transform: rotate(-45deg);
+}
+
+.three {
+  background: blue;
+   transform: rotate(80deg);
+}
+```

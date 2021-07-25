@@ -1,14 +1,25 @@
-p::first-letter {
-  color: goldenrod;
-  position: fixed;
-  top: 100px;
+* {
+  margin: 2rem;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-p:hover::first-letter {
-  font-size: 3rem;
-  transition: all 0.5s linear;
+div {
+  width: 150px;
+  height: 150px;
+  display:inline-block;
+}
+.one {
+  background: red;
+  transform: rotate(10deg);
 }
 
-p::first-line {
-  font-weight: bold;
+.two {
+  background: green;
+   transform: rotate(-45deg);
+}
+
+.three {
+  background: blue;
+   transform: rotate(80deg);
 }
