@@ -469,6 +469,8 @@ color:#ff0000
 <b>HEIGHT</b><br>
 -control height of an element<br>
 
+<img src='./img/CSSunits.PNG'>
+
 ```
 h1{
   background:rgb(170, 78, 78);
@@ -937,6 +939,19 @@ button:nth-child(3) {
 }
 ```
 
+additional guide:
+<br><b>Box Model</b>
+-everything which is displayed by css is a box.<br>
+-The CSS box model is actually a box that wraped around each HTML component.<br>
+-it includes:<br>
+- margins
+- borders
+- padding
+- actual content
+
+<img src='./img/boxModelTip.PNG' width='500'>
+<img src='./img/boxModelTip2.PNG' width='500'>
+
 ## CSS tutorial
 
 - display
@@ -1173,6 +1188,18 @@ opacity:0;
 visibility:0;
 -- element still exist but and content are only hidden
 ```
+<code><h2>Opacity Use Cases</h2></code><br>
+<code>3 ways to apply opacity in CSS</code><br>
+all will achieve a similar result<br>
+<img src='./img/opacity1.PNG' width='500'><br>
+
+<code>useful cases</code>
+<img src='./img/inactive-list.PNG' width='500'><br>
+<img src='./img/disabled-forms.PNG' width='500'><br>
+<img src='./img/labels-dark.PNG' width='500'><br>
+<img src='./img/Area-charts.PNG' width='500'><br>
+<img src='./img/modal-background.PNG' width='500'><br>
+<img src='./img/Carousel-button.PNG' width='500'><br>
 
 ## CSS Tutorial
 
@@ -1184,6 +1211,8 @@ visibility:0;
 - shorthand syntax
 
 The background property in CSS allows you to control the background of any element (what paints underneath the content in that element). It is a shorthand property, which means that it allows you to write what would be multiple CSS properties in one.
+
+<img src='./img/CSSbackground.PNG'><br>
 
 ```
 body {
@@ -1447,6 +1476,8 @@ The overflow-x and overflow-y properties specifies whether to change the overflo
 }
 ```
 
+<code><h2>Useful Overflow Use Cases</h2></code>
+<img src="./img/float-right.PNG" width='500'><br>
 <b>float and clear</b><br/>
 
 <b>float</b> property specifies how an element should float.<br>
@@ -1465,7 +1496,21 @@ The float property is used for positioning and formatting content e.g. let an im
 <br>
 <code>Float:right</code><br>
 specifies that an image should float to the right in a text<br>
-<img src="./img/float-right.PNG" width='500'>
+<img src="./img/sunsetGradient.PNG" width='500'>
+<br>
+<img src="./img/ribbons.PNG" width='500'>
+<br>
+<img src="./img/vertical-scroll.PNG" width='500'>
+<br>
+<img src="./img/horizontal-scroll.PNG" width='500'>
+<br>
+<img src="./img/carousels.PNG" width='500'>
+<br>
+<img src="./img/triangles.PNG" width='500'>
+<br>
+<img src="./img/crop-image.PNG" width='500'>
+<br>
+<img src="./img/data-tables.PNG" width='500'>
 <br>
 
 ```
@@ -1684,3 +1729,5 @@ div {
 }
 
 ```
+
+//8:49 time
