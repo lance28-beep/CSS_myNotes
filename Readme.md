@@ -1810,3 +1810,92 @@ div {
 - an element with <code> position:sticky</code> is positioned based on the user's scroll position.
   <br>
   a sticky element toggles between relative and fixed.depending on the scroll position. It is positioned relative until the given offset position is met in the viewport then sticks in place(like position:fixed)<br>
+
+<code><h1>Media Queries</h1></code>
+Responsive Design<br>
+Style elements on different screen sizes<br>
+min-width: --- starting from:<br>
+max-width: --- up to<br>
+Mobile first<br>
+
+<code> What is media query?</code><br>
+a media query is a css technique introduced in css3.<br>
+it is uses the <code>@media</code> rule to include a block of CSS properties if a certain condition is true:<br>
+
+Media queries can be used to check many things,such as:<br>
+
+- width and height of the viewport<br>
+- width and height of the device<br>
+- orientation(is the tablet/phone in landscapre or portrait mode?)<br>
+
+<code> Media Query syntax</code><br>
+-a media query consist of a media type and can contain one or more expressions, which resolve to either true or false<br>
+
+<code>@media not|only mediatype and (expressions){
+CSS-Code;</code>
+}
+
+```
+@media screen and (min-width:576px) {
+  body {
+    background: red;
+  }
+  .banner {
+    background: yellow;
+  }
+  h1 {
+    color: black;
+    font-size: 60px;
+  }
+}
+```
+
+<code>z-index ---- z-axis<br>
+position:static --- does not work<br>
+</code><br>
+
+property specifies the stack of an element.<br>
+an element with greater stack order is always in front of an element with a lower stack order<br>
+
+<code>Note</code><br>
+<code>z-index</code> only works on positioned elements(position:absolute,relative,fixed,sticky) and flex(elements that are direct children of display flex elements)<br>
+
+<img src='./img/z-index.PNG' width='500'><br>
+
+```
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  margin: 20px;
+  width: 80vw;
+  height: 70vh;
+  border: 5px solid red;
+  position: relative;
+}
+img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border: 1px solid white;
+}
+.one {
+  top: 0;
+  left: 0;
+}
+.two {
+  top: 10%;
+  left: 10%;
+  z-index: 1;
+}
+.three {
+  top: 20%;
+  left: 20%;
+  z-index: -1;
+}
+
+
+```
