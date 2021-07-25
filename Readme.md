@@ -944,6 +944,7 @@ additional guide:
 -everything which is displayed by css is a box.<br>
 -The CSS box model is actually a box that wraped around each HTML component.<br>
 -it includes:<br>
+
 - margins
 - borders
 - padding
@@ -1188,12 +1189,13 @@ opacity:0;
 visibility:0;
 -- element still exist but and content are only hidden
 ```
+
 <code><h2>Opacity Use Cases</h2></code><br>
 <code>3 ways to apply opacity in CSS</code><br>
 all will achieve a similar result<br>
 <img src='./img/opacity1.PNG' width='500'><br>
 
-<code>useful cases</code>
+<code>useful cases</code><br>
 <img src='./img/inactive-list.PNG' width='500'><br>
 <img src='./img/disabled-forms.PNG' width='500'><br>
 <img src='./img/labels-dark.PNG' width='500'><br>
@@ -1664,7 +1666,9 @@ elements are then positioned using the top, bottom, left, and right properties. 
 
 <b>static</b><br>
 <img src='./img/static.PNG' width='500'>
--static default position
+-static default position<br>
+-Static positioned elements are not affected by the top,bottom,left,and right.<br>
+-an element with <code>position:static;</code> is not positioned in any special way;it is always positioned according to the normal flow of the page:<br>
 
 ```
 * {
@@ -1695,9 +1699,10 @@ div {
 ```
 
 <b>relative</b><br>
-<img src='./img/static.PNG' width='500'>
+<img src='./img/relative2.PNG' width='500'><br>
 -same with static<br>
--unlike with static.relatice are capable to add or callibrate top,bottom,left and right
+-an element with <code>position:relative;</code> is positioned relative to its normal position.<br>
+-setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted to fit into any gap left by the element<br>
 
 ```
 * {
@@ -1730,4 +1735,78 @@ div {
 
 ```
 
-//8:49 time
+<b>absolute</b><br>
+<img src='./img/position-absolute.PNG' width='500'><br>
+
+an element with <code>position:absolute;</code> is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport.)<br>
+however,if an absolute positioned element has no positioned ancestors, it used the document body, and moves along with page scrolling.<br>
+<code>Notes:</code>
+<br> a "positioned" element is one whose position is anything except <code>static</code>
+
+```
+* {
+  margin: 0.5rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  border: 3px solid red;
+  background: yellow;
+  margin: 4px;
+}
+.one {
+  background: blue;
+  color: white;
+}
+.two {
+  background: greenyellow;
+  position: relative;
+  left: -0.5rem;
+}
+.special {
+  background: hotpink;
+  font-size: 20px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+```
+
+<b>fixed</b><br>
+<img src='./img/fixed.PNG' width='500'><br>
+-an element with <code>position:fixed;</code> is positioned relative to the viewport, which means it always stays in the same place even if the page scrolled. The top, right, bottom, and left properties are used to position the element.<br>
+
+```
+* {
+  margin: 0.5rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  border: 3px solid red;
+  background: yellow;
+  margin: 4px;
+}
+.one {
+  background: blue;
+  color: white;
+}
+.two {
+  background: greenyellow;
+  left: -0.5rem;
+}
+.special {
+  background: hotpink;
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+```
+
+<b>sticky</b><br>
+
+- an element with <code> position:sticky</code> is positioned based on the user's scroll position.
+  <br>
+  a sticky element toggles between relative and fixed.depending on the scroll position. It is positioned relative until the given offset position is met in the viewport then sticks in place(like position:fixed)<br>

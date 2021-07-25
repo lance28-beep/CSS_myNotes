@@ -3,25 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 div {
   border: 3px solid red;
   background: yellow;
   margin: 4px;
 }
-
 .one {
   background: blue;
   color: white;
-  position: relative;
-  top: 200px;
 }
-
 .two {
   background: greenyellow;
+  left: -0.5rem;
 }
-
 .special {
   background: hotpink;
   font-size: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
