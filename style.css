@@ -1,7 +1,14 @@
 p::first-letter {
-  font-size: 3rem;
+  color: goldenrod;
+  position: fixed;
+  top: 100px;
 }
 
-p::first-line{
+p:hover::first-letter {
+  font-size: 3rem;
+  transition: all 0.5s linear;
+}
+
+p::first-line {
   font-weight: bold;
 }

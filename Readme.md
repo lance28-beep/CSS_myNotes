@@ -1971,32 +1971,30 @@ div:hover::before {
 -a <code>combinators</code> is something that explains the relationship between the selectors.<br>
 
 <b>four different combinators in CSS</b><br>
-- decendant selectors (space)
-> <i>elment element</i><br>
-<code>div  p</code><br>
-selects all <code>\<p></code> elements inside <code>\<div></code> elements<br>
 
+- decendant selectors (space)
+
+  > <i>elment element</i><br> > <code>div p</code><br>
+  > selects all <code>\<p></code> elements inside <code>\<div></code> elements<br>
 
 - child selectors (>)
-> <i>elment>element</i><br>
-<code>div > p</code><br>
-selects all <code>\<p></code> elements where the parent is a <code>\<div></code> elements<br>
 
+  > <i>elment>element</i><br> > <code>div > p</code><br>
+  > selects all <code>\<p></code> elements where the parent is a <code>\<div></code> elements<br>
 
 - adjacent siblings selector(+)
-> <i>elment+element</i><br>
-<code>div + p</code><br>
-selects the first <code>\<p></code> elements that are placed immediately after <code>\<div></code> elements<br>
 
+  > <i>elment+element</i><br> > <code>div + p</code><br>
+  > selects the first <code>\<p></code> elements that are placed immediately after <code>\<div></code> elements<br>
 
 - general siblings selector(~)
-> <i>elment~element</i><br>
-<code>p ~ ul</code><br>
-selects every<code>\<ul></code> elements that are preceded by a<code>\<p></code> elements<br>
-preceded:come before (something) in time<br>
+  > <i>elment~element</i><br> > <code>p ~ ul</code><br>
+  > selects every<code>\<ul></code> elements that are preceded by a<code>\<p></code> elements<br>
+  > preceded:come before (something) in time<br>
 
-<code>/*::first-letter & ::first-line*/</code><br>
+<code>/_::first-letter & ::first-line_/</code><br>
 <img src='./img/first.PNG' width='500'> <br>
+
 ```
 p::first-letter {
   font-size: 3rem;
@@ -2006,3 +2004,19 @@ p::first-line{
   font-weight: bold;
 }
 ```
+
+<br>
+<strong> CSS Tutorial </strong><br>
+
+- transform: translate(), rotate(), scale(),skew()
+- transition (change over time)
+- animation: (change over time with points)
+<hr>
+
+
+<br>
+<strong> CSS Tutorial </strong><br>
+- transform: translate(), rotate(), scale(),skew()
+- transition (change over time)
+- animation: (change over time with points)
+<hr>
