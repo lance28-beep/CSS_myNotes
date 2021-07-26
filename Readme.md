@@ -2117,3 +2117,123 @@ div {
    transform: rotate(80deg);
 }
 ```
+
+<code>
+transition : change over time:<br>
+transition-property :<br>
+transition-duration :<br>
+</code>
+
+sample:
+
+```
+:root {
+  margin: 5rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+div:hover {
+  background: crimson;
+  transform: scale(50) rotate(90deg);
+  border-radius: 50%;
+}
+.one {
+  background: red;
+  transition-property: background, transform, border-radius;
+  transition-duration: 2s, 2s, 1s;
+  transition-delay:5s;
+}
+```
+
+<code>
+transition : change over time:<br>
+transition-delay :<br>
+transition shorthand :<br>
+</code>
+
+shorthand syntax:
+
+> transition : transition-property transition-duration transition-delay(optional),transition-property transition-duration transition-delay(optional)<br>
+
+0r
+
+> transition :all transition-duration transition-delay(optional)
+
+```
+:root {
+  margin: 5rem;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+div:hover {
+  background: crimson;
+  transform: scale(2) rotate(90deg);
+  border-radius: 50%;
+}
+.one {
+  background: red;
+  transition: background 2s, transform 2s, border-radius 2s 0.2s;
+
+```
+
+<code>
+how the transition takes place <br>
+transition-timing-function: <br>
+transition:all 3s here 5s; <br>
+ease = default <br>
+ease = slow start, fast, slow end <br>
+linear = same speed start to end <br>
+ease-in = slow start <br>
+ease-out = slow end <br>
+ease-in-out = slow start, fast, slow end <br>
+</code>
+<br>
+
+```
+div {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  color: white;
+  margin: 15px;
+  transition: all 1s;
+}
+
+div:hover {
+width:400px;
+}
+
+.ease {
+transition-timing-function: ease;
+}
+
+.linear {
+transition-timing-function: linear;
+}
+
+.ease-in {
+transition-timing-function: ease-in;
+}
+
+.ease-out {
+transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+transition-timing-function: ease-in-out;
+}
+
+```
+
+<img src='./img/transition.PNG' width='500'>
